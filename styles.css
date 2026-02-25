@@ -1,0 +1,64 @@
+body {
+    background-color: rgb(41, 44, 51);
+    font-family: "Roboto Mono", monospace;
+    color: rgb(204, 204, 204);
+}
+
+a {
+    color:#a1c281;
+}
+
+h1 {
+    color:rgb(204, 204, 204);
+}
+
+h2 {
+    color:rgb(210,115,120);
+}
+
+h3 {
+    color:rgb(201,156,110);
+}
+
+li {
+    padding-inline-start: 2em; /* Indents all content, including wrapped lines */
+}
+
+a:hover {
+    font-weight:900;
+    color:rgb(203,203,90);
+}
+
+.comp-list ul{
+    list-style-type:none;
+}
+
+.comp-list strong{
+    color:#608af7;
+}
+
+.comp-list em{
+    color:rgb(94,99,111);
+}
+
+.comp-list {
+    unicode-range:U+0007C;
+}
+
+.pipe-color{
+    color:rgb(94,99,111);
+}
+
+.comp-headers {
+    padding-left: 2em; 
+    margin-left: 0;
+}
+
+.indentme {
+    padding-left: 2em; 
+    margin-left: 0;
+}
+
+footer {
+    text-align: center;
+}
