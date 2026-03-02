@@ -62,3 +62,13 @@ a:hover {
 footer {
     text-align: center;
 }
+
+.background-image-div {
+  background-image: url('/assets/ben.jpg');
+  background-repeat: no-repeat;
+  background-position: center; /* Centers the image */
+  background-size: contain;
+  /*background-size: cover;      Scales the image to cover the entire container (may crop) */
+  height: 100vh;
+  background-color: black;
+}
