@@ -2,6 +2,8 @@ body {
     background-color: rgb(41, 44, 51);
     font-family: "Roboto Mono", monospace;
     color: rgb(204, 204, 204);
+    margin-left: 1em;
+
 }
 
 a {
@@ -22,6 +24,7 @@ h3 {
 
 li {
     padding-inline-start: 2em; /* Indents all content, including wrapped lines */
+    margin-left: 0em;
 }
 
 a:hover {
@@ -31,6 +34,7 @@ a:hover {
 
 .comp-list ul{
     list-style-type:none;
+
 }
 
 .comp-list strong{
@@ -49,14 +53,11 @@ a:hover {
     color:rgb(94,99,111);
 }
 
-.comp-headers {
-    padding-left: 2em; 
-    margin-left: 0;
-}
+
 
 .indentme {
     padding-left: 2em; 
-    margin-left: 0;
+
 }
 
 footer {
