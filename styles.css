@@ -3,6 +3,9 @@ body {
     font-family: "Roboto Mono", monospace;
     color: rgb(204, 204, 204);
     margin-left: 1em;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 
 }
 
@@ -22,47 +25,41 @@ h3 {
     color:rgb(201,156,110);
 }
 
-li {
-    padding-inline-start: 2em; /* Indents all content, including wrapped lines */
-    margin-left: 0em;
-}
 
 a:hover {
     font-weight:900;
     color:rgb(203,203,90);
 }
 
-.comp-list ul{
+.no-bullets ul {
     list-style-type:none;
-
+    padding-inline-start:2em;
 }
 
-.comp-list strong{
+strong {
     color:#608af7;
 }
 
-.comp-list em{
+em {
     color:rgb(94,99,111);
 }
 
-.comp-list {
-    unicode-range:U+0007C;
-}
 
 .pipe-color{
     color:rgb(94,99,111);
 }
 
 
-
 .indentme {
     padding-left: 2em; 
-
 }
 
 footer {
     text-align: center;
+    margin-top: auto;
 }
+
+
 
 .background-image-div {
   background-image: url('/assets/ben.jpg');
