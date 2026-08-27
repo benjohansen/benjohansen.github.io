@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>G.K. Chesterton Quote</title>
+<title>Course Introduction</title>
 
 <style>
     * {
@@ -29,9 +29,27 @@
         padding: 8vw;
     }
 
-    .quote-container {
+    .slide {
         max-width: 1500px;
+        width: 100%;
         text-align: center;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .content {
+        transition: opacity 0.45s ease;
+    }
+
+    .fade-out {
+        opacity: 0;
+    }
+
+    .intro {
+        font-size: clamp(2.8rem, 6vw, 7.5rem);
+        line-height: 1.15;
+        font-weight: 400;
+        letter-spacing: -0.03em;
     }
 
     .quote {
@@ -39,7 +57,7 @@
         line-height: 1.12;
         font-weight: 400;
         letter-spacing: -0.03em;
-        margin: 0 0 0.6em;
+        margin-bottom: 0.6em;
     }
 
     .attribution {
@@ -68,20 +86,65 @@
 
 <body>
 
-<div class="quote-container">
+<div class="slide" id="slide">
 
-    <p class="quote">
-        “If a thing is worth doing,<br>
-        it is worth doing badly.”
-    </p>
+    <div class="content" id="content">
 
-    <div class="attribution">
-        <span class="author">G.K. Chesterton</span>
-        <span class="divider">—</span>
-        <span class="source">What’s Wrong with the World</span>
+        <div class="intro">
+            You've just stepped into a whole new world.
+            This course is your guide for navigating it well,
+            helping you not just survive but flourish and be
+            formed in every aspect of who you are.
+        </div>
+
     </div>
 
 </div>
+
+<script>
+    const slide = document.getElementById("slide");
+    const content = document.getElementById("content");
+
+    let showingQuote = false;
+
+    const intro = `
+        <div class="intro">
+            You've just stepped into a whole new world.
+            This course is your guide for navigating it well,
+            helping you not just survive but flourish and be
+            formed in every aspect of who you are.
+        </div>
+    `;
+
+    const quote = `
+        <div class="quote">
+            “If a thing is worth doing,<br>
+            it is worth doing badly.”
+        </div>
+
+        <div class="attribution">
+            <span class="author">G.K. Chesterton</span>
+            <span class="divider">—</span>
+            <span class="source">What’s Wrong with the World</span>
+        </div>
+    `;
+
+    slide.addEventListener("click", () => {
+
+        content.classList.add("fade-out");
+
+        setTimeout(() => {
+
+            showingQuote = !showingQuote;
+
+            content.innerHTML = showingQuote ? quote : intro;
+
+            content.classList.remove("fade-out");
+
+        }, 450);
+
+    });
+</script>
 
 </body>
 </html>
